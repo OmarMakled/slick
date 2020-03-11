@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <style>
+        .slick img {
+            height: 300px;
+            max-width: 400px;
+            margin: 0 1px;
+        }
+
+        .slider-for img {
+            height: 500px;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .slider-nav img {
+            height: 100px;
+            max-width: 100px;
+        }
+
+        .slick-prev {
+            left: 0;
+            z-index: 1;
+        }
+
+        .slick-next {
+            right: 25px;
+            z-index: 1;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-size: 40px;
+        }
+
+        .slick-container {
+            position: relative;
+        }
+
+        .slick-container .count {
+            z-index: 2;
+            position: absolute;
+            bottom: 10px;
+            left: 16px;
+            background: rgba(44, 44, 44, 0.8);
+            text-align: center;
+            color: #ffff;
+            padding: 0 8px;
+            line-height: 36px;
+            text-decoration: none;
+        }
+
+        .slick-container .count:hover {
+            background: #ff837a;
+        }
+
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
+
+        .main-sliderbox {
+            /* position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, .85); */
+            /* z-index: 100; */
+            /* display: none; */
+            /* overflow: hidden; */
+            /* overflow-y: auto */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slick-container">
+        <a href="#" class="count" id="img-count">
+            6
+            <svg aria-hidden="true" class="icon" focusable="false" data-prefix="fas" data-icon="images"
+                class="svg-inline--fa fa-images fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512">
+                <path fill="currentColor"
+                    d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v208c0 44.112 35.888 80 80 80h336zm96-80V80c0-26.51-21.49-48-48-48H144c-26.51 0-48 21.49-48 48v256c0 26.51 21.49 48 48 48h384c26.51 0 48-21.49 48-48zM256 128c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-96 144l55.515-55.515c4.686-4.686 12.284-4.686 16.971 0L272 256l135.515-135.515c4.686-4.686 12.284-4.686 16.971 0L512 208v112H160v-48z">
+                </path>
+            </svg>
+        </a>
+        <div class="slick">
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/LandScape%20in%20Mountain%20View%20Giza%20Plateau%20compound.jpg"
+                alt="">
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/real%20estates%20for%20sale%20in%20Mountain%20View%20Giza%20Plateau%20Compound.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/Swimming%20pool%20in%20Mountain%20View%20Giza%20Plateau%20.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D8%A8%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D9%87%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D9%85%D8%B3%D8%A7%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A7%D8%B3%D8%B9%D8%A9%20%D8%A8%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B4%D8%A7%D9%85%D9%84%D8%A9%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+        </div>
+
+    </div>
+
+    <div class="main-sliderbox">
+        <div class="slider slider-for">
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/LandScape%20in%20Mountain%20View%20Giza%20Plateau%20compound.jpg"
+                alt="">
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/real%20estates%20for%20sale%20in%20Mountain%20View%20Giza%20Plateau%20Compound.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/Swimming%20pool%20in%20Mountain%20View%20Giza%20Plateau%20.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D8%A8%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D9%87%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D9%85%D8%B3%D8%A7%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A7%D8%B3%D8%B9%D8%A9%20%D8%A8%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B4%D8%A7%D9%85%D9%84%D8%A9%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+        </div>
+        <div class="slider slider-nav">
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/LandScape%20in%20Mountain%20View%20Giza%20Plateau%20compound.jpg"
+                alt="">
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/real%20estates%20for%20sale%20in%20Mountain%20View%20Giza%20Plateau%20Compound.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/Swimming%20pool%20in%20Mountain%20View%20Giza%20Plateau%20.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA%20%D9%84%D9%84%D8%A8%D9%8A%D8%B9%20%D8%A8%D9%83%D9%85%D8%A8%D9%88%D9%86%D8%AF%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D9%87%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D9%85%D8%B3%D8%A7%D8%AD%D8%A7%D8%AA%20%D9%88%D8%A7%D8%B3%D8%B9%D8%A9%20%D8%A8%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+
+
+            <img src="https://realestate.eg/ckfinder/userfiles/images/Mountain%20View%20Giza%20Plateau%20compound/%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B4%D8%A7%D9%85%D9%84%D8%A9%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D8%A7%D9%88%D9%86%D8%AA%D9%86%20%D9%81%D9%8A%D9%88%20%D8%AC%D9%8A%D8%B2%D8%A9%20%D8%A8%D9%84%D8%A7%D8%AA%D9%88%D9%87.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./re.js"></script>
+</body>
+
+</html>
